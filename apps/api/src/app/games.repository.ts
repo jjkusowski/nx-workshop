@@ -1,4 +1,6 @@
-const games = [
+import {Game} from '@bg-hoard/api/util-interface';
+
+const games: Game[] = [
   {
     id: 'settlers-in-the-can',
     name: 'Settlers in the Can',
@@ -26,5 +28,5 @@ const games = [
   },
 ];
 
-export const getAllGames = () => games;
-export const getGame = (id: string) => games.find((game) => game.id === id);
+export const getAllGames = (): Game[] => games;
+export const getGame = (id: string): Game => games.find((game) => game.id === id);
