@@ -11,11 +11,12 @@ import { formatRating } from '@bg-hoard/store/util-formatters';
 import { Route, Link } from 'react-router-dom';
 
 import { StoreFeatureGameDetail } from '@bg-hoard/store/feature-game-detail';
+import {Game} from '@bg-hoard/util-interface'
 import { useEffect, useState } from 'react';
 
 export const App = () => {
   const [state, setState] = useState<{
-    data: any[];
+    data: Game[];
     loadingState: 'success' | 'error' | 'loading';
   }>({
     data: [],

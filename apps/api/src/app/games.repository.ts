@@ -1,4 +1,4 @@
-import {Game} from '@bg-hoard/api/util-interface';
+import { Game } from '@bg-hoard/util-interface';
 
 const games: Game[] = [
   {
@@ -29,4 +29,5 @@ const games: Game[] = [
 ];
 
 export const getAllGames = (): Game[] => games;
-export const getGame = (id: string): Game => games.find((game) => game.id === id);
+export const getGame = (id: string): Game =>
+  games.find((game) => game.id === id);
