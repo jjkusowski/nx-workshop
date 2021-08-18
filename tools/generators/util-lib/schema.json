@@ -20,6 +20,10 @@
         "type": "list",
         "items": [
           {
+            "value": "admin",
+            "label": "admin"
+          },
+          {
             "value": "api",
             "label": "api"
           },

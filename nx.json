@@ -33,6 +33,13 @@
     ]
   },
   "projects": {
+    "admin": {
+      "tags": ["type:app", "scope:admin"]
+    },
+    "admin-e2e": {
+      "tags": ["type:e2e", "scope:admin"],
+      "implicitDependencies": ["admin"]
+    },
     "api": {
       "tags": ["scope:api", "type:app"]
     },
