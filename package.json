@@ -47,6 +47,7 @@
     "@nrwl/jest": "12.7.1",
     "@nrwl/linter": "12.7.1",
     "@nrwl/node": "12.7.2",
+    "@nrwl/nx-cloud": "^12.3.10",
     "@nrwl/react": "12.7.1",
     "@nrwl/storybook": "^12.7.2",
     "@nrwl/tao": "12.7.1",
