@@ -14,6 +14,7 @@ import { StoreFeatureGameDetail } from '@bg-hoard/store/feature-game-detail';
 import {Game} from '@bg-hoard/util-interface'
 import { useEffect, useState } from 'react';
 
+const title = 'Board Game Hoard';
 export const App = () => {
   const [state, setState] = useState<{
     data: Game[];
@@ -45,7 +46,7 @@ export const App = () => {
   }, []);
   return (
     <>
-      <Header title="Board Game Hoard" />
+      <Header title={title} />
       <div className={styles.container}>
         <div className={styles['games-layout']}>
           {state.loadingState === 'loading'
